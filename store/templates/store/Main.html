@@ -13,11 +13,39 @@
 </head>
 
 <body>
-    <div class="navbar">
-        <a class="navbar-brand" href="{% url 'store'%}">Shine Boutique</a>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <div class="top-bar"></div>
+        <a class="navbar-brand " href="{% url 'store'%}"><img id="logo" src="{% static 'images/logo.png' %}">Shine
+            Boutique</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav  mt-2 w-100 mt-lg-0">
+                <li class="mx-auto col">
+                    <form class="form-inline w-100">
+                        <input class="form-control mr-sm-2 col-8" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </li>
+                <div class="form-inline my-3  my-lg-0">
+
+                    <a href="{% url 'cart' %}">
+                        <img id="cart-icon" class="ml-3" src="{% static 'images/cart.png' %}">
+                    </a>
+
+                    <p id="cart-total">{{cartItems}}</p>
+                    <a href="#" class="btn btn-warning  mx-3">Login</a>
+                </div>
+            </ul>
+
+        </div>
+    </nav>
 
     <div class="container">
+        <br>
         {% block content %}{% endblock content %}
     </div>
 
