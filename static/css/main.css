@@ -1,5 +1,7 @@
 :root {
   --clr1: #f8f9f9;
+  --clr2: #fe7868;
+  --clr3: #373373;
 }
 
 body {
@@ -20,12 +22,12 @@ h6 {
 }
 
 .navbar .top-bar {
-  height: 2px;
+  height: 4px;
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #fe7868;
+  background-color: var(--clr2);
 }
 
 #logo {
@@ -35,4 +37,110 @@ h6 {
 #cart-icon {
   width: 32px;
   display: inline-block;
+}
+
+#cart-total {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  color: white;
+  padding: 0 0.4rem;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.box-element {
+  box-shadow: hsl(0, 0%, 80%) 0 0 16px;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 200px;
+  -webkit-box-shadow: -1px -3px 5px -2px rgba(214, 214, 214, 1);
+  -moz-box-shadow: -1px -3px 5px -2px rgba(214, 214, 214, 1);
+  box-shadow: -1px -3px 5px -2px rgba(214, 214, 214, 1);
+}
+
+.product {
+  border-radius: 0 0 4px 4px;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.btn-custom-one {
+  background-color: var(--clr3);
+  color: white;
+}
+
+.btn-custom-one:hover {
+  color: white;
+  filter: brightness(80%);
+}
+
+.btn-custom-two {
+  border: 1px solid var(--clr3);
+  color: var(--clr3);
+}
+
+.btn-custom-two:hover {
+  background-color: var(--clr3);
+  color: white;
+  border-color: transparent;
+}
+
+.col-lg-4,
+.col-lg-6,
+.col-lg-8,
+.col-lg-12 {
+  margin-top: 10px;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.row-image {
+  width: 100px;
+}
+
+.form-field {
+  width: 250px;
+  display: inline-block;
+  padding: 5px;
+}
+
+.cart-row {
+  display: flex;
+  align-items: flex-stretch;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ececec;
+}
+
+.quantity {
+  display: inline-block;
+  font-weight: 700;
+  padding-right: 10px;
+}
+
+.chg-quantity {
+  width: 12px;
+  cursor: pointer;
+  display: block;
+  margin-top: 5px;
+  transition: 0.1s;
+}
+
+.chg-quantity:hover {
+  opacity: 0.6;
+}
+
+.hidden {
+  display: none !important;
 }

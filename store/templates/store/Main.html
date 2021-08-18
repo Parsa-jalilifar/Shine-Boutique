@@ -26,7 +26,8 @@
             <ul class="navbar-nav  mt-2 w-100 mt-lg-0">
                 <li class="mx-auto col">
                     <form class="form-inline w-100">
-                        <input class="form-control mr-sm-2 col-8" type="search" placeholder="Search" aria-label="Search">
+                        <input class="form-control mr-sm-2 col-8" type="search" placeholder="Search"
+                            aria-label="Search">
                         <button class="btn btn-outline-success m-2 my-sm-0" type="submit">Search</button>
                     </form>
                 </li>
@@ -35,8 +36,8 @@
                     <a href="{% url 'cart' %}">
                         <img id="cart-icon" class="ml-3" src="{% static 'images/cart.png' %}">
                     </a>
+                    <p id="cart-total">0</p>
 
-                    <p id="cart-total">{{cartItems}}</p>
                     <a href="#" class="btn btn-warning  mx-3">Login</a>
                 </div>
             </ul>
