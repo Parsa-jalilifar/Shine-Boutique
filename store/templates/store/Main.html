@@ -85,7 +85,7 @@
                     <a href="{% url 'cart' %}">
                         <img id="cart-icon" class="ml-3" src="{% static 'images/cart.png' %}">
                     </a>
-                    <p id="cart-total">0</p>
+                    <p id="cart-total">{{cartItems}}</p>
 
                     <a href="#" class="btn btn-warning  mx-3">Login</a>
                 </div>
