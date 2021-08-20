@@ -1,4 +1,4 @@
-{% extends 'store/Main.html' %}
+{% extends 'store/main.html' %}
 {% load static %}
 {% block content %}
 <div class="row">
@@ -12,11 +12,12 @@
             <button data-product="{{product.id}}" data-action="add"
                 class="btn btn-outline-secondary add-btn update-cart">Add to Cart</button>
 
-            <a class="btn btn-outline-info" href="#">View</a>
+            <a class="btn btn-outline-success" href="#">View</a>
             <h4 style="display: inline-block; float: right"><strong>${{product.price}}</strong></h4>
 
         </div>
     </div>
     {% endfor %}
 </div>
+
 {% endblock content %}
