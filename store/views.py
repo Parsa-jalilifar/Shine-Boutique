@@ -4,6 +4,7 @@ import json
 import datetime
 from .models import *
 from .utils import cookieCart, cartData, guestOrder
+from django.core.paginator import Paginator
 
 # Create your views here.
 
@@ -17,6 +18,10 @@ def store(request):
     items = data['items']
 
     products = Product.objects.all()
+    p = Paginator(products, 6)
+    page = request.GET.get('page', 1)
+    products = p.get_page(page)
+
     context = {'products': products, 'cartItems': cartItems}
     return render(request, 'store/store.html', context)
 

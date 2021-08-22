@@ -50,6 +50,10 @@ h6 {
   font-size: 12px;
 }
 
+.body-content {
+  margin-top: 5rem;
+}
+
 .box-element {
   box-shadow: hsl(0, 0%, 80%) 0 0 16px;
   background-color: #fff;
@@ -148,4 +152,8 @@ h6 {
 
 .hidden {
   display: none !important;
+}
+
+.store-counter {
+  margin-bottom: 2rem;
 }
