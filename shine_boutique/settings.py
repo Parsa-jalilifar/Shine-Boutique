@@ -57,7 +57,7 @@ ROOT_URLCONF = 'shine_boutique.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(SETTINGS_PATH, 'templates')],
+        'DIRS': [os.path.join(SETTINGS_PATH, 'templates/store')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
