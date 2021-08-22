@@ -1,1 +1,1 @@
-# Shine-Boutique
+This is a eccomerse website that allows people to add the desired items to shipping cart and manipulate the quantity of them and finally checkout them to an address. Users can be either logedin or logout to finish their shoping. To make This website django micro framework is used. The website is hosted on heroku and it is using a postgresql for its database.
