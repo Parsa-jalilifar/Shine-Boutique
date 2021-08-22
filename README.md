@@ -1,1 +1,4 @@
-This is a eccomerse website that allows people to add the desired items to shipping cart and manipulate the quantity of them and finally checkout them to an address. Users can be either logedin or logout to finish their shoping. To make This website django micro framework is used. The website is hosted on heroku and it is using a postgresql for its database.
+# Shine Boutique
+This is a eccomerse website that allows people to add the desired items from store to the shipping cart and manipulate the quantity of them. Finally, Users are able to checkout items in cart to an address. Users can be anonymous to fish their orders. To make This website, django micro framework is used. The website is hosted on heroku and it is using a postgresql databse for recording data.
+
+### Link to the website 
