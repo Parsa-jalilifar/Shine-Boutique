@@ -157,3 +157,12 @@ h6 {
 .store-counter {
   margin-bottom: 2rem;
 }
+
+.page-item.active .page-link {
+  background-color: var(--clr3);
+  border-color: var(--clr3);
+}
+
+.page-link {
+  color: var(--clr3);
+}
