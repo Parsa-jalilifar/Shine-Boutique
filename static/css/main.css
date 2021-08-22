@@ -166,3 +166,7 @@ h6 {
 .page-link {
   color: var(--clr3);
 }
+
+.page-link:hover {
+  color: var(--clr3);
+}
